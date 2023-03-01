@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -25,20 +26,20 @@ int main()
 
     /*Now, let's find the average age of the Ogunfuwa's Family. Having issues with the "if" command. Will continue when I have more knowledge. We have a pending project*/
     
-    char ch[5];
+    char response[5];
     double average = (daddy + mummy + venus + vesta)/4;
         printf("Would you like to know their average age ? \nEnter Yes or No\n");
-    ch=getchar;
-    
-    
-    if (ch = Yes) {
+        scanf("%s", response);
+
+    if(!strcmp(response, "Yes")  
+    {
     
     printf("The average age of The Ogunfwa Family is :\n");
     printf("%.2lf", average);    
         
     }
     
-    if (response[5] = "No") {
+    if (!strcmp(response, "No") {
     
     printf("You have opted out of seeing the average age ");    
         
